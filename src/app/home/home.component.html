@@ -1,0 +1,16 @@
+<h2>38:44</h2>
+<h3>{{ title }}</h3>
+<button (click)='onClick()'>Click</button>
+
+
+<ul class="mt-3" *ngIf="users">
+	<li *ngFor="let user of users.data">
+		
+		<div class="media">
+		  <img [src]="user.avatar" class="mr-3">
+		  <div class="media-body">
+		    <h5 class="mt-0">{{ user.first_name }} {{ user.last_name }}</h5>
+		  </div>
+		</div>
+	</li>
+</ul>
